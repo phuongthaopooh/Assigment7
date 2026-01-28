@@ -1,0 +1,19 @@
+package assigment_7;
+
+import java.util.Scanner;
+
+public class bai_6 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" Nhap chuoi:");
+        String s = sc.nextLine();
+        System.out.print(" Nhap tu can thay the:");
+        String tuCu = sc.nextLine();
+        System.out.print(" Nhap tu thay the:");
+        String tuMoi = sc.nextLine();
+        System.out.print(" Thay the:");
+        String ketQua = s.replace(tuCu, tuMoi);
+        System.out.println(ketQua);
+    }
+}

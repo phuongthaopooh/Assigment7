@@ -1,0 +1,26 @@
+package assigment_7;
+
+import java.util.Scanner;
+
+public class bai_4 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" Nhap chuoi:");
+        String chuoi = sc.nextLine();
+        boolean khoangTrang = true;
+        for (int i = 0; i < chuoi.length(); i++) {
+            char kyTu = chuoi.charAt(i);
+            if (kyTu != ' ') {
+                System.out.print(kyTu);
+                khoangTrang = false;
+            } else {
+                if (!khoangTrang) {
+                    System.out.print(" ");
+                    khoangTrang = true;
+                }
+            }
+        }
+
+    }
+}
